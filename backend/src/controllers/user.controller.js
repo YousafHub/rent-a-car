@@ -108,7 +108,7 @@ export const logout = asyncHandler(async (req, res, next) => {
     res.clearCookie("token", {
         httpOnly: true,
         secure: false,
-        sameSite: "lax",
+        sameSite: "none",
         path: "/"
     });
     
