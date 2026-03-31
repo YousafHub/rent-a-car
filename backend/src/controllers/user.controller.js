@@ -11,8 +11,7 @@ const cookieOptions = {
     secure: process.env.NODE_ENV === 'production',
     sameSite: "lax",
     maxAge: 3 * 24 * 60 * 60 * 1000,
-    path: "/",
-    domain: "localhost"
+    path: "/"
 };
 
 export const register = asyncHandler(async (req, res, next) => {
